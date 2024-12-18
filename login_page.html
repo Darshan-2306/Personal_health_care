@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Login page</title>
+<style>
+body{
+
+background-image: url(pngtree-doctor-running-minimalist-background-structure-
+image_66071.jpg);
+
+background-size: cover;
+}
+div{
+margin:250px 250px 250px 250px;
+height: 100px;
+width: 300px;
+background-color: #ae4fe8f5;
+border: 2px solid rgb(0, 0, 0);
+border-style: dashed;
+padding: 50px;
+border-radius: 25px;
+}
+#a{
+color:rgba(218, 238, 40, 0.947);
+}
+</style>
+</head>
+<body>
+<center>
+<div><form method="post" onsubmit="validation()">
+<label id="a">Username:</label>
+<input type="text" id="uname" placeholder="username"><br>
+<label id="a">Password: </label>
+<input type="password" id="pswd" placeholder="password"><br><br>
+<input type="submit" value="Submit" id="sub" formaction="project p1.html"; >
+</form></div></center>
+<script>
+function validation()
+{
+var un=document.getElementById("uname").value;
+var ps=document.getElementById("pswd").value;
+if(un=="" || ps=="")
+{
+window.alert("Enter username or password");
+}
+else if(un=="darshan" & ps=="1")
+{
+window.alert("Login successful!");
+}
+else
+{
+window.alert("Login failed !");
+}
+}
+</script>
+
+</body>
+</html>
